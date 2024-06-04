@@ -2,49 +2,34 @@
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
-## Get started
+# Frontend Mentor - Time tracking dashboard
 
-1. Install dependencies
+![Design preview for the Time tracking dashboard coding challenge](./design/desktop-preview.jpg)
 
-   ```bash
-   npm install
-   ```
+## Welcome! 👋
 
-2. Start the app
+Thanks for checking out this front-end coding challenge.
 
-   ```bash
-    npx expo start
-   ```
+[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
 
-In the output, you'll find options to open the app in a
+**To do this challenge, you need a basic understanding of HTML, CSS and JavaScript.**
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## The challenge
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+Your challenge is to build out this dashboard and get it looking as close to the design as possible.
 
-## Get a fresh project
+You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
 
-When you're ready, run:
+If you would like to practice working with JSON data, we provide a local `data.json` file for the activities. This means you'll be able to pull the data from there instead of using the content in the `.html` file.
 
-```bash
-npm run reset-project
-```
+Your users should be able to:
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+- View the optimal layout for the site depending on their device's screen size
+- See hover states for all interactive elements on the page
+- Switch between viewing Daily, Weekly, and Monthly stats
 
-## Learn more
+Want some support on the challenge? [Join our community](https://www.frontendmentor.io/community) and ask questions in the **#help** channel.
 
-To learn more about developing your project with Expo, look at the following resources:
+### Expected behaviour
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- The text for the previous period's time should change based on the active timeframe. For Daily, it should read "Yesterday" e.g "Yesterday - 2hrs". For Weekly, it should read "Last Week" e.g. "Last Week - 32hrs". For monthly, it should read "Last Month" e.g. "Last Month - 19hrs".
