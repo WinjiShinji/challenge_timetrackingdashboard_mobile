@@ -1,4 +1,4 @@
-import { ScrollView, StyleSheet, View } from "react-native"
+import { ScrollView, StyleSheet } from "react-native"
 import CardProfile from "../components/CardProfile"
 import { AppProvider } from "@/context/AppContext"
 import { SafeAreaView } from "react-native-safe-area-context"

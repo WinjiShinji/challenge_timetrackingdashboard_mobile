@@ -97,7 +97,7 @@ const styles = StyleSheet.create({
   body: {
     width: "100%",
     flexDirection: "row",
-    borderRadius: 8,
+    borderRadius: 16,
     backgroundColor: "hsl(235, 46%, 20%)",
     transform: [{ translateY: -16 }],
   },
@@ -121,8 +121,8 @@ const styles = StyleSheet.create({
   header: {
     height: 72,
     overflow: "hidden",
-    borderTopLeftRadius: 8,
-    borderTopRightRadius: 8,
+    borderTopLeftRadius: 16,
+    borderTopRightRadius: 16,
   },
   hours: {
     color: "rgba(255, 255, 255, 0.87)",
