@@ -1,25 +1,37 @@
 import { useContext } from "react"
 import AppContext from "../context/AppContext"
-import { Button, Image, StyleSheet, Text, View } from "react-native"
+import { Button, Image, Pressable, StyleSheet, Text, View } from "react-native"
+import { router } from "expo-router"
 
 export default function CardTop() {
   const { state, dispatch } = useContext(AppContext)
+
+  const handleProfilePress = () => {
+    try {
+      router.navigate("/profile")
+    } catch (err) {
+      console.log(err)
+    } finally {
+    }
+  }
 
   return (
     <View style={styles.main}>
       {/* Card Header */}
       <View style={styles.header}>
-        <Image
-          style={styles.img}
-          source={require("../assets/images/image-jeremy.png")}
-          alt="Your profile picture"
-          width={200}
-          height={200}
-        />
-        <View>
-          <Text style={styles.headerP}>Report for</Text>
-          <Text style={styles.headerH2}>Jeremy Robson</Text>
-        </View>
+        <Pressable onLongPress={() => handleProfilePress()}>
+          <Image
+            style={styles.img}
+            source={require("../assets/images/image-jeremy.png")}
+            alt="Your profile picture"
+            width={200}
+            height={200}
+          />
+          <View>
+            <Text style={styles.headerP}>Report for</Text>
+            <Text style={styles.headerH2}>Jeremy Robson</Text>
+          </View>
+        </Pressable>
       </View>
 
       {/* Card Body */}
