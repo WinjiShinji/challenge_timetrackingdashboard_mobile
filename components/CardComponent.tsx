@@ -1,38 +1,19 @@
 import AppContext from "@/context/AppContext"
+import { router } from "expo-router"
 import { useContext } from "react"
-import {
-  Button,
-  Image,
-  ImageURISource,
-  StyleSheet,
-  Text,
-  View,
-} from "react-native"
-
-type Props = {
-  data: {
-    title: string
-    timeframes: {
-      daily: {
-        current: number
-        previous: number
-      }
-      weekly: {
-        current: number
-        previous: number
-      }
-      monthly: {
-        current: number
-        previous: number
-      }
-    }
-  }
-  image: ImageURISource
-  color: string
-}
+import { Button, Image, StyleSheet, Text, View } from "react-native"
 
 export default function CardComponent({ data, image, color }: Props) {
   const { state } = useContext(AppContext)
+
+  const handleMenuBtn = () => {
+    try {
+      router.navigate(`/modal/${data.title || "work"}`)
+    } catch (err) {
+      console.log(err)
+    } finally {
+    }
+  }
 
   return (
     <View style={styles.container}>
@@ -65,7 +46,7 @@ export default function CardComponent({ data, image, color }: Props) {
         <View style={styles.columnB}>
           <View>
             <View style={styles.button}>
-              <Button title=". . ." />
+              <Button title=". . ." onPress={() => handleMenuBtn()} />
             </View>
             <Text style={styles.state}>
               {`${

@@ -1,4 +1,3 @@
-import { Text, View } from "react-native"
 import { AppProvider } from "@/context/AppContext"
 import {
   SafeAreaProvider,
