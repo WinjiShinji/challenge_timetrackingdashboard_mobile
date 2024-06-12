@@ -40,14 +40,6 @@ export default function CardComponent({ data, image, color }: Props) {
                 ? data.timeframes.monthly.current
                 : 0
             }hrs`}</Text>
-          </View>
-        </View>
-
-        <View style={styles.columnB}>
-          <View>
-            <View style={styles.button}>
-              <Button title=". . ." onPress={() => handleMenuBtn()} />
-            </View>
             <Text style={styles.state}>
               {`${
                 state.daily === true
@@ -69,6 +61,14 @@ export default function CardComponent({ data, image, color }: Props) {
             </Text>
           </View>
         </View>
+
+        <View style={styles.columnB}>
+          <View>
+            <View style={styles.button}>
+              <Button title=". . ." onPress={() => handleMenuBtn()} />
+            </View>
+          </View>
+        </View>
       </View>
     </View>
   )
@@ -86,15 +86,15 @@ const styles = StyleSheet.create({
     width: 48,
     justifyContent: "flex-start",
     alignSelf: "flex-end",
-    marginBottom: 8,
+    marginBottom: 0,
   },
   columnA: {
-    justifyContent: "space-evenly",
+    justifyContent: "flex-start",
     width: "50%",
     padding: 16,
   },
   columnB: {
-    justifyContent: "space-evenly",
+    justifyContent: "flex-start",
     width: "50%",
     padding: 16,
   },
@@ -107,8 +107,9 @@ const styles = StyleSheet.create({
   },
   hours: {
     color: "rgba(255, 255, 255, 0.87)",
-    fontSize: 32,
-    fontWeight: "400",
+    fontSize: 48,
+    fontWeight: "300",
+    letterSpacing: 1,
   },
   img: {
     alignSelf: "flex-end",
@@ -118,8 +119,8 @@ const styles = StyleSheet.create({
     color: "hsl(236, 100%, 87%)",
     textTransform: "capitalize",
     fontSize: 16,
-    textAlign: "right",
     marginTop: 8,
+    letterSpacing: 1,
   },
   title: {
     color: "rgba(255, 255, 255, 0.87)",
@@ -127,6 +128,6 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: "700",
     marginTop: 8,
-    marginBottom: 8,
+    letterSpacing: 1,
   },
 })

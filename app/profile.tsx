@@ -43,12 +43,12 @@ export default function profile() {
 
 const styles = StyleSheet.create({
   activity: { marginTop: 8, marginBottom: 16 },
-  color: { color: "white", letterSpacing: 0.5 },
+  color: { color: "white", letterSpacing: 1 },
   header: {
     fontSize: 40,
     textAlign: "center",
     fontWeight: 600,
-    letterSpacing: 2,
+    letterSpacing: 1,
   },
   item: { fontSize: 24, fontWeight: 300 },
   main: {

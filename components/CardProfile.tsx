@@ -92,12 +92,14 @@ const styles = StyleSheet.create({
     fontSize: 24,
     textAlign: "center",
     paddingTop: 16,
+    letterSpacing: 1,
   },
   headerH2: {
     color: "white",
     fontSize: 32,
     textAlign: "center",
     paddingBottom: 16,
+    letterSpacing: 1,
   },
   button: {
     width: "100%",
