@@ -1,35 +1,25 @@
-# Welcome to your Expo app 👋
+# Project - Mobile Time Tracking App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## Objective Summary
 
-# Frontend Mentor - Time tracking dashboard
+The objective of this project is to build a Front-End Mobile Time Tracking App based on the provided design template from [Frontend Mentor](https://www.frontendmentor.io).
 
 ![Design preview for the Time tracking dashboard coding challenge](./design/desktop-preview.jpg)
 
-## Welcome! 👋
-
-Thanks for checking out this front-end coding challenge.
-
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
-
-**To do this challenge, you need a basic understanding of HTML, CSS and JavaScript.**
-
-## The challenge
+## Challenge
 
 Your challenge is to build out this dashboard and get it looking as close to the design as possible.
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+_Users should be able to:_
 
-If you would like to practice working with JSON data, we provide a local `data.json` file for the activities. This means you'll be able to pull the data from there instead of using the content in the `.html` file.
+> - See hover states for all interactive elements on the page
+> - Switch between viewing Daily, Weekly, and Monthly stats
+> - The text for the previous period's time should change based on the active timeframe. For Daily, it should read "Yesterday" e.g "Yesterday - 2hrs". For Weekly, it should read "Last Week" e.g. "Last Week - 32hrs". For monthly, it should read "Last Month" e.g. "Last Month - 19hrs".
 
-Your users should be able to:
+## Process
 
-- View the optimal layout for the site depending on their device's screen size
-- See hover states for all interactive elements on the page
-- Switch between viewing Daily, Weekly, and Monthly stats
-
-Want some support on the challenge? [Join our community](https://www.frontendmentor.io/community) and ask questions in the **#help** channel.
-
-### Expected behaviour
-
-- The text for the previous period's time should change based on the active timeframe. For Daily, it should read "Yesterday" e.g "Yesterday - 2hrs". For Weekly, it should read "Last Week" e.g. "Last Week - 32hrs". For monthly, it should read "Last Month" e.g. "Last Month - 19hrs".
+- [Expo](https://expo.dev) will be used as the development environment.
+- App Routing handled through Expo's Stack component built on top of React-Navigation.
+- @react-navigation/material-top-tabs" library used for Tab navigation.
+- react-native-safe-area-context used to handle top-tabs margin insets.
+- React useContext used to manage state persistance through the application.
